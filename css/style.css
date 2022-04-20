@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.header, .first{
+    padding: 50px 150px;
+}
 .header, .first, .footer {
     background-color: #1f2937;
 }
@@ -10,7 +13,7 @@ h1 {
     font-weight: extra-bold;
     color: #f9faf8;
 }
-.header, .first, button, .footer {
+.header, .first, button, .footer, .fourth {
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -19,6 +22,7 @@ h3 {
     color: #f9faf8;
 }
 button, .fourth {
+    
     background-color: #3882f6;
 }
 h2 {
@@ -31,13 +35,64 @@ h2 {
 }
 .quote {
     font-size: 36px;
-    font-weight: light;
+    font-weight: lighter;
     font-style: italic;
     color: #1f2937;
 }
-img {
+.small {
     max-width: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 15px; 
 }
 .large {
-    max-width: 200px;
+    width: 477px;
+    height: 179px;
+    flex-shrink: 0;
+}
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    padding: 2px;
+    border-radius: 10px;
+    width: 100px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.right-side {
+    display: flex;
+    gap: 8px;
+}
+.informations {
+    display: flex;
+    margin-top: 32px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.footer {
+    justify-self: flex-end;
+}
+.third , .second{
+    padding: 50px 200px;
+}
+.fourth {
+    margin: 56px 150px;
+    border-radius: 15px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer {
+    padding: 20px 150px;
+    text-align: center;
+}
+.thor {
+    font-weight: bold;
+    text-align: end;
 }
